@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #004586;
+    color: #fff;
+    font-size: 16px;
+}
+
+a {
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    padding: 10px 0;
+}
+
+.logo {
+    width: 70px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+
+.navbar-light .navbar-nav .nav-item {
+    padding: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #fff;
+    background: #3b6d9ccc;
+}
+
+.rounded-pill {
+    border-radius: 1rem !important;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    color: #f3ba2f;
+    font-weight: bold;
+}
+
+.rounded-10 {
+    border-radius: 10px;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+.home-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/home-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: -1;
+}
+
+a:hover {
+    background: transparent;
+    color: #000;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: #004586 !important;
+}
+
+.btn-primary {
+    color: #000;
+    background-color: #f3ba2f;
+    border-color: #f3ba2f;
+}
+
+.bg-dark-2 {
+    background-color: rgb(0 43 82/70%) !important;
+}
+
+.footer {
+    border-top: 1px solid rgb(0 43 82/70%);
+}
+
+.roadmap {
+    position: relative;
+    padding: 30px 0;
+    z-index: 0;
+}
+
+.roadmap:before {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    left: 50%;
+    top: 0;
+    content: "";
+    background: linear-gradient(to bottom, #46bdf4 0%, #7a0fff 100%);
+}
+
+.roadmap ul {
+    list-style: none;
+    padding: 0;
+}
+
+.roadmap ul li {
+    margin-bottom: 10px;
+}
+
+.roadmap .roadmap-content {
+    position: relative;
+    padding: 2px 10px;
+}
+
+.roadmap .roadmap-content:before {
+    position: absolute;
+    height: 19px;
+    width: 19px;
+    border: 1px solid #46bdf4;
+    background: #46bdf4;
+    top: 2px;
+    left: -21px;
+    border-radius: 50%;
+    content: "";
+}
+
+.roadmap .roadmap-content-left:before,
+.roadmap .roadmap-content-left:after {
+    right: -22px;
+    left: auto;
+}
+
+.form-control {
+    position: relative;
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100px;
+    }
+    .roadmap:before {
+        background: none;
+    }
+    .roadmap .roadmap-content:before {
+        display: none;
+    }
+}
+
+#countdown li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+#countdown li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+#countdown .emoji {
+    display: none;
+    padding: 1rem;
+}
+
+#countdown .emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+    #countdown h1 {
+        font-size: 1.5rem;
+    }
+    #countdown li {
+        font-size: 0.95rem;
+        padding: 0.2rem;
+    }
+    #Dashboard .col-md-6 {
+        flex: 0 0 auto !important;
+        width: 100% !important;
+        display: inline-table;
+        margin-bottom: 30px !important;
+    }
+    .claim_button {
+        padding: 10px !important;
+    }
+    .navbar-light .navbar-toggler {
+        display: none !important;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    #countdown li span {
+        font-size: 1.375rem;
+    }
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #015cb3;
+    border-color: #015cb3;
+    cursor: pointer;
+}
+
+.claim_button {
+    /* background: #ccc; */
+    padding: 20px;
+    width: 80%;
+    display: table;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px !important;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#Dashboard .col-md-6 {
+    flex: 0 0 auto;
+    width: 49%;
+    display: inline-table;
+}
+
+#Dashboard input {
+    padding: 10px;
+    width: 80% !important;
+    margin: 0 auto;
+    display: table;
+}
